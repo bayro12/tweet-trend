@@ -34,7 +34,7 @@ pipeline {
             steps {
                 script {
                     echo '<--------------- Jar Publish Started --------------->'
-                    def server = Artifactory.newServer(url: registry + "/artifactory", credentialsId: "artifact-cred")
+                    def server = Artifactory.newServer(url: registry + "/artifactory", credentialsId: "artfiact-cred")
                     def uploadSpec = """{
                         "files": [
                             {
